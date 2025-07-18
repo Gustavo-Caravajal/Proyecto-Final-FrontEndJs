@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Console', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(41, 41, 41);
+}
+
+nav {
+    /* padding margin y background-color se aplican directamente al nav*/
+    margin-left: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    /*display configura el nav como un contenedor flexible mientras que
+    justify-content y align-items afectan como se posicionan los hijos directos del nav
+    que en este caso son la lista de opciones y el carrito*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.menu {
+    /*list-style margin y padding se aplican sobre el menu que en este caso es la lista*/
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    /*display: flex convierte a la lista en un contenedor flexible*/
+    display: flex;
+    /*gap da un espacio de 10px entre cada <li>*/
+    gap: 10px;
+}
+
+
+li a {
+    text-decoration: none;
+    background-color: rgb(245, 245, 51);
+    border-radius: 15px;
+    color: rgb(43, 42, 42);
+    padding: 5px;
+}
+
+li a:hover {
+    background-color: rgb(168, 158, 12);
+}
+
+#inicio {
+    text-align: center;
+    margin: 0;
+}
+
+#inicio h1,
+#inicio p {
+    color: rgb(253, 253, 253);
+}
+
+h2 {
+    color: rgb(253, 253, 253);
+    text-align: center;
+}
+
+
+#buscar-productos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buscador{
+    display: flex;
+    align-self: center;
+    width: 500px;
+    height: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+#contenedor-productos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.tarjeta-producto {
+    background-color: rgb(245, 245, 68);
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2%;
+    border-radius: 15px;
+    color: rgb(56, 56, 56);
+}
+
+.imagen-producto {
+    height: 60%;
+    width: 80%;
+    align-self: center;
+}
+
+.boton-producto {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    padding: 5px;
+    background-color:  rgb(61, 61, 61);
+    align-self: center;
+    color: rgb(255, 255, 255);
+}
+
+.boton-producto:hover{
+    background-color: rgb(78, 78, 76);
+}
+
+#contador-carrito{
+    text-decoration: none;
+    color: white;
+}
+
+
+.container-reseñas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reseña {
+    background-color: rgba(245, 245, 220, 0.719);
+    border-radius: 15px;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+}
+
+
+
+.contacto {
+    display: flex;
+    align-items: center;
+
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3f36b;
+    padding: 40px 25px;
+    border-radius: 15px;
+    align-items: start;
+    width: 20%;
+    margin: 0 auto;
+    /*esto siempre funciona ya que el tamaño del formularia esta fijo*/
+}
+
+.boton {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    padding: 3px;
+    background-color: rgba(245, 245, 220, 0.719);
+    ;
+    margin-bottom: 15px;
+
+}
+
+.entrada {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 25px;
+    width: 100%;
+
+}
+
+.entrada-mensaje {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 80px;
+    width: 100%;
+
+}
+
+.enviar {
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(177, 177, 177);
+    align-self: center;
+}
+
+.enviar:hover{
+    background-color: rgb(146, 145, 145);;
+}
+
+.pie-pagina {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+.logos a {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.carrito i {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#contenedor-carrito{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.producto-carrito{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 2%;
+    padding: 2%;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 25px;    
+}
+
+.img-producto-carrito{
+    height: 60%;
+    width: 80%;
+    align-self: center;
+}
+
+.btn-eliminar-carrito{
+    border-radius: 8px;
+}
+
+.btn-eliminar-carrito:hover{
+    background-color:rgb(148, 148, 148);
+}
+
+
+#acciones-carrito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor-botones{
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+#acciones-carrito button{
+    align-self: center;
+    border-radius: 8px;
+}
+
+.precio-total{
+    align-self: center;
+    color: white;
+}
+
+.mensaje-carrito{
+    color: white;
+}

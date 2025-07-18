@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li class="seccion"><a href="#inicio">inicio</a></li>
+                <li class="seccion"><a href="#productos">productos</a></li>
+                <li class="seccion"><a href="#reseñas">reseñas</a></li>
+                <li class="seccion"><a href="#contacto">contacto</a></li>
+            </ul>
+            <a class="carrito" href="carrito.html">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="contador-carrito">0</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h1> Laptop Store, Tecnología que se adapta a vos </h1>
+            <p>Descubrí laptops versátiles y potentes para trabajar, crear, jugar o disfrutar contenido donde sea.
+                Modelos actualizados, rápidos y duraderos, pensados para tu día a día.</p>
+            <img class="hero" src="./IMG/Laptop.jpg" alt="laptop">
+        </section>
+
+        <h2 id="productos" >Nuestros Productos</h2>
+        <section id="buscar-productos">
+            <input class="buscador" type="text" id="buscador" name="buscador" placeholder="Buscar productos">
+        </section>        
+        <section id="contenedor-productos">
+
+        </section>
+        <section id="reseñas">
+            <h2> Reseñas de nuestros clientes </h2>
+            <div class="container-reseñas">
+                <div class="reseña">
+                    <p>
+                        ⭐️⭐️⭐️⭐️⭐️ <br>
+                        💻 Apple MacBook Pro 14 Inch Space Grey <br>
+                        “Muy feliz con el rendimiento” <br>
+                        No soy fan de Apple, pero esta MacBook me <br>
+                        sorprendió. La velocidad del M1 Pro es <br>
+                        increíble y la pantalla se ve impecable. <br>
+                        La uso para editar video y todo va súper <br>
+                        fluido. El precio es alto, pero lo vale. <br>
+                        — Valentina Romero <br>
+                    </p>
+                </div>
+                <div class="reseña">
+
+                    <p>
+                        ⭐️⭐️⭐️⭐️⭐️ <br>
+                        💻 Asus Zenbook Pro Dual Screen Laptop <br>
+                        “Excelente para multitarea” <br>
+                        El diseño con doble pantalla es ideal <br>
+                        para trabajar con varias cosas a la vez.<br>
+                        Lo uso para diseño gráfico y edición de <br>
+                        fotos, y no se traba nunca. Tardó un <br>
+                        poco en llegar, pero la espera valió <br>
+                        la pena. <br>
+                        — Matías Ferreyra <br>
+
+                    </p>
+                </div>
+                <div class="reseña">
+                    <p>
+                        ⭐️⭐️⭐️⭐️⭐️ <br>
+                        💻 Huawei Matebook X Pro <br>
+                        “Liviana, elegante y muy rápida” <br>
+                        Me encanta el diseño fino y liviano. <br>
+                        La pantalla táctil es muy útil y la <br>
+                        batería dura bastante. La compré <br>
+                        para uso general (ofimática, pelis, <br>
+                        algo de programación) y cumple más <br>
+                        que bien. <br>
+                        — Lucía Carrizo <br>
+
+                    </p>
+                </div>
+                <div class="reseña">
+                    <p>
+                        ⭐️⭐️⭐️⭐️⭐️ <br>
+                        💻 Lenovo Yoga 920 <br>
+                        “Perfecta para uso diario y viajes” <br>
+                        Es muy versátil. Me encanta que se <br>
+                        pueda usar como tablet también. La uso <br>
+                        para navegar, ver series y trabajar <br>
+                        desde casa. <br>
+                        — Federico Morales <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2> Contactanos </h2>
+            <div class="contacto">
+                <form class="formulario" action="https://formspree.io/f/manogvqd" method="post">
+                    <label class="boton" for="nombre"> Nombre: </label>
+                    <input class="entrada" type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+                        required>
+                    <label class="boton" for="apellido"> Apellido: </label>
+                    <input class="entrada" type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido"
+                        required>
+                    <label class="boton" for="mail"> E-mail: </label>
+                    <input class="entrada" type="email" id="mail" name="mail" placeholder="Escribe tu E-mail" required>
+                    <label class="boton" for="mensaje"> Mensaje: </label>
+                    <textarea class="entrada-mensaje" name="mensaje" id="mensaje" placeholder="Dejanos tu consulta"
+                        required></textarea>
+                    <input class="enviar" type="submit" id="enviar" name="enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="pie-pagina">
+            <p class="derechos-reservados">Derechos reservados &copy; 2025</p>
+            <div class="logos">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>
