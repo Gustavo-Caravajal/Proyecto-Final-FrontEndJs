@@ -329,7 +329,7 @@ h2 {
 
 @media (min-width: 360px) and (max-width: 575px) {
     .formulario {
-        width: 50%;
+        width: 60%;
     }
 
     .buscador {
