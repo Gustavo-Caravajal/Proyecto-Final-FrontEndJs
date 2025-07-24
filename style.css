@@ -22,10 +22,11 @@ nav {
 
 }
 
-.hero{
+.hero {
     width: 100%;
     margin: 0px;
 }
+
 .menu {
     /*list-style margin y padding se aplican sobre el menu que en este caso es la lista*/
     list-style: none;
@@ -75,7 +76,7 @@ h2 {
 .buscador {
     display: flex;
     align-self: center;
-    width: 500px;
+    width: 30%;
     height: 30px;
     border-radius: 25px;
     text-align: center;
@@ -289,27 +290,41 @@ h2 {
     color: white;
 }
 
-@media (min-width: 993px) and (max-width: 1200px){
-    .formulario {   
+@media (min-width: 993px) and (max-width: 1200px) {
+    .formulario {
         width: 24%;
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px){
-    .formulario {   
+@media (min-width: 768px) and (max-width: 992px) {
+    .formulario {
         width: 27%;
     }
+    .buscador {        
+        width: 35%;        
+    }
+
 }
 
-@media (min-width: 576px) and (max-width: 767px){
-    .formulario {   
+@media (min-width: 576px) and (max-width: 767px) {
+    .formulario {
         width: 35%;
     }
+
+    .buscador {        
+        width: 45%;        
+    }
+
 }
 
-@media (min-width: 410px) and (max-width: 575px){
-    .formulario {   
+@media (min-width: 360px) and (max-width: 575px) {
+    .formulario {
         width: 50%;
     }
-}
 
+    .buscador {        
+        width: 60%;        
+    }
+
+
+}
