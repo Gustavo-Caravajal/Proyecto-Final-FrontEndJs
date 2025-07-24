@@ -132,7 +132,7 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
 .reseña {
@@ -140,7 +140,7 @@ h2 {
     border-radius: 15px;
     text-align: center;
     width: 450px;
-    height: 250px;
+    height: 200px;
 }
 
 
@@ -300,8 +300,13 @@ h2 {
     .formulario {
         width: 27%;
     }
-    .buscador {        
-        width: 35%;        
+
+    .buscador {
+        width: 35%;
+    }
+
+    .reseña {
+        height: 230px;
     }
 
 }
@@ -311,9 +316,14 @@ h2 {
         width: 35%;
     }
 
-    .buscador {        
-        width: 45%;        
+    .buscador {
+        width: 45%;
     }
+
+    .reseña {
+        height: 240px;
+    }
+
 
 }
 
@@ -322,9 +332,12 @@ h2 {
         width: 50%;
     }
 
-    .buscador {        
-        width: 60%;        
+    .buscador {
+        width: 60%;
     }
 
+    .reseña {
+        height: 250px;
+    }
 
 }
